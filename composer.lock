@@ -1,0 +1,142 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0aaba799abed07a4f57cd56ebab4a5e0",
+    "packages": [
+        {
+            "name": "envs/dotenv",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lazervel/dotenv.git",
+                "reference": "ccc3321a5113cd8e25d79487d27d3020b405721a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lazervel/dotenv/zipball/ccc3321a5113cd8e25d79487d27d3020b405721a",
+                "reference": "ccc3321a5113cd8e25d79487d27d3020b405721a",
+                "shasum": ""
+            },
+            "require": {
+                "filesys/path": "^8.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shahzada Modassir",
+                    "email": "codingmodassir@gmail.com",
+                    "homepage": "https://github.com/shahzadamodassir"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automatically.",
+            "keywords": [
+                "dotenv",
+                "env"
+            ],
+            "support": {
+                "issues": "https://github.com/lazervel/dotenv/issues",
+                "source": "https://github.com/lazervel/dotenv/tree/v3.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/shahzadamodassir",
+                    "type": "Github"
+                },
+                {
+                    "url": "https://opencollective.com/shahzadamodassir",
+                    "type": "Opencollective"
+                },
+                {
+                    "url": "https://patreon.com/shahzadamodassir",
+                    "type": "Patreon"
+                }
+            ],
+            "time": "2024-11-02T17:01:56+00:00"
+        },
+        {
+            "name": "filesys/path",
+            "version": "v8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lazervel/path.git",
+                "reference": "bdd3f2206dfb213a7cf3bdba97ea574916feb40a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lazervel/path/zipball/bdd3f2206dfb213a7cf3bdba97ea574916feb40a",
+                "reference": "bdd3f2206dfb213a7cf3bdba97ea574916feb40a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Path\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shahzada Modassir",
+                    "email": "codingmodassir@gmail.com",
+                    "homepage": "https://github.com/shahzadamodassir"
+                }
+            ],
+            "description": "Help with handling or manipulating file and directory path.",
+            "keywords": [
+                "filesys",
+                "filesystem",
+                "fs",
+                "path"
+            ],
+            "support": {
+                "issues": "https://github.com/lazervel/path/issues",
+                "source": "https://github.com/lazervel/path/tree/v8.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/shahzadamodassir",
+                    "type": "Github"
+                },
+                {
+                    "url": "https://opencollective.com/shahzadamodassir",
+                    "type": "Opencollective"
+                },
+                {
+                    "url": "https://patreon.com/shahzadamodassir",
+                    "type": "Patreon"
+                }
+            ],
+            "time": "2024-11-02T18:34:02+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.4 || ^8.0"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
