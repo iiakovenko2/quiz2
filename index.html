@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Application</h1>
+    </header>
+    <main>
+        <form id="quizForm">
+            <input type="hidden" id="studentName" name="name" value="">
+            <h2>Quiz</h2>
+            <label for="q1">Question 1: What is the capital of France?</label><br>
+            <input type="radio" id="q1a" name="q1" value="Paris" required> Paris<br>
+            <input type="radio" id="q1b" name="q1" value="London"> London<br>
+            <input type="radio" id="q1c" name="q1" value="Rome"> Rome<br>
+            <!-- Add more questions here -->
+            <button type="submit">Submit Quiz</button>
+        </form>
+        <div id="result-section" style="display:none;">
+            <h2>Your Result</h2>
+            <p id="result"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quiz Application</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const studentName = urlParams.get('name');
+            document.getElementById('studentName').value = studentName;
+
+            document.getElementById('quizForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                fetch('results.php', {
+                    method: 'POST',
+                    body: new URLSearchParams(formData)
+                }).then(response => response.text())
+                  .then(data => {
+                      document.getElementById('quizForm').style.display = 'none';
+                      document.getElementById('result-section').style.display = 'block';
+                      document.getElementById('result').innerHTML = data;
+                  });
+            });
+        });
+    </script>
+</body>
+</html>
