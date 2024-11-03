@@ -1,0 +1,11 @@
+# Exported from Render on 2024-11-03T10:58:33Z
+services:
+- type: web
+  name: quiz2
+  runtime: docker
+  repo: https://github.com/iiakovenko2/quiz2
+  plan: free
+  region: frankfurt
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
