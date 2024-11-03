@@ -1,7 +1,7 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: dpg-csjiiqjtq21c73dde410-a
+    databaseName: quiz2_postgresql_imeda
+    user: quiz2_postgresql_imeda_user
 
  services:
  - type: pserv
